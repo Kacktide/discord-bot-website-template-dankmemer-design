@@ -84,7 +84,8 @@ git clone https://github.com/Kacktide/Discord-Bot-Website-Template.git
 
  **SEO**
  
- ![Embeded Links](https://cdn.discordapp.com/attachments/802859558925893672/862266283620958228/unknown.png)
+![image](https://github.com/Kacktide/discord-bot-website-template-dankmemer-design/assets/70317531/c01af4f4-b5a1-48d1-b511-987a95294c05)
+
  
  > How to edit(Steps)
   1. Go to `index.html`.
