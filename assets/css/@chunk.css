@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+body {
+  background: rgb(11, 17, 12);
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  background: rgb(66, 66, 66);
+  width: 8px;
+}
+body::-webkit-scrollbar-track {
+  background: rgb(104, 104, 104);
+}
+.navbar {
+  width: 90%;
+  background: rgb(18, 27, 19);
+  padding: 0.75em;
+  margin: 1.5vw auto;
+  display: flex;
+  border-radius: 6px;
+  position: relative;
+  align-items: center;
+}
+.nav-items {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+.nav-links {
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5em;
+  transition: 0.25s ease;
+}
+.nav-links:hover {
+  color: #198c49;
+}
+.logo img {
+  width: 45px;
+}
+.logo {
+  padding: 0.75em;
+}
+.nav-item-1 {
+  display: flex;
+}
+.nav-item-2 {
+  display: flex;
+}
+.login {
+  color: #166827;
+}
+.home {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100vh;
+  padding-top: 33vh;
+  margin-bottom: 30vh;
+}
+
+.title-home {
+  font-weight: 700;
+  font-size: 6rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: -8px;
+}
+
+.description {
+  color: #9ca3af;
+  font-size: 1.3rem;
+  max-width: 570px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.button {
+  border: solid 3px rgb(20, 118, 61);
+  text-decoration: none;
+  font-size: 1.55rem;
+  padding: 0.25em 0.75em;
+  position: relative;
+  background: rgb(11, 17, 12);
+}
+.button::after {
+  content: "";
+  border: solid 3px rgb(20, 118, 61);
+  transition: 0.2s ease;
+  width: 178px;
+  height: 47px;
+  z-index: -69420;
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+}
+.button:hover::after {
+  bottom: -3px;
+  right: -4px;
+}
+
+.features {
+  min-height: 50vh;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 7.5vh;
+  margin-bottom: 12rem;
+  padding: 10px;
+}
+
+.title-normal {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.description-normal {
+  color: rgb(231, 231, 231);
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: rgb(8, 12, 8);
+  margin: 0 auto;
+  max-width: 800px;
+  border-radius: 8px;
+  padding: 1.75em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: start;
+  place-self: center;
+  margin-top: 1.25rem;
+}
+
+.card-item {
+  padding: 0.5em;
+  padding-bottom: 1.25em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ion-icon {
+  color: #199532;
+  font-size: 1.3rem;
+  padding: 0.5em;
+  background: rgb(11, 17, 12);
+  border-radius: 100000px;
+  margin-right: 1.5rem;
+}
+
+.card-description {
+  font-size: 0.8rem;
+  color: #dfdfdf;
+}
+
+.join {
+  margin: 0 auto;
+  text-align: center;
+  padding: 3em;
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(8, 12, 8);
+}
+
+.footer-logo img {
+  height: 100px;
+  user-select: none;
+  cursor: default;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer-logo-description {
+  color: #9ca3af;
+}
+.footer-items-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-items {
+  list-style: none;
+}
+
+.footer-links {
+  text-decoration: none;
+  color: #cfd2d8;
+  transition: 0.1s ease;
+}
+
+.footer-links:hover {
+  color: #198c49;
+}
+.hamburger {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+    margin: 0;
+    border-radius: 0;
+  }
+  .navbar.active .nav-items {
+    display: flex;
+  }
+  .nav-items {
+    flex-direction: column;
+    display: none;
+    gap: 2.5rem;
+  }
+  .nav-item-1 {
+    flex-direction: column;
+  }
+  .hamburger {
+    display: inline-block;
+  }
+  .nav-item-2 li a:not(.login) {
+    display: none;
+  }
+  .login {
+    margin: auto;
+    width: 300px;
+    border-radius: 4px;
+    background-color: limegreen;
+    font-weight: medium;
+    color: white;
+  }
+  .card {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
